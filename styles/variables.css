@@ -1,7 +1,7 @@
 :root {
-  --main-font: "Inter", sans-serif;
+  --font-variation: "Inter", sans-serif;
   --accent-font: "PressStart2P", fantasy;
-  --card-text-weight: 400;
+  --font-variation-settings: 400;
   --card-title-weight: 785;
   --background-image:
     repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
