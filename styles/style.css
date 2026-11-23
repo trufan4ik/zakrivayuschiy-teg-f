@@ -60,8 +60,8 @@
 }
 
 .card_title {
-  font-family: var(--font-variation);
-  font-weight: var(--card-title-weight);
+  font-family: var(--main-font);
+  font-variation-settings: var(--card-text-weight);
   font-size: 18px;
   padding: 4px 10px;
   border-bottom: 2px solid #000;
@@ -106,8 +106,8 @@
 }
 
 .card_text {
-  font-family: var(--font-variation);
-  font-weight: var(--font-variation-settings);
+  font-family: var(--main-font);
+  font-variation-settings: var(--card-text-weight);
   font-size: 18px;
   line-height: 21px;
   margin: 0 25px 25px 25px;
@@ -173,7 +173,7 @@
 
 .button__text {
   font-family: var(--accent-font);
-  font-weight: var(--font-variation-settings);
+  font-weight: var(--card-text-weight);
   font-size: 14px;
 }
 
@@ -201,7 +201,7 @@
   top: 25px;
   right: 25px;
   font-family: var(--accent-font);
-  font-weight: var(--font-variation-settings);
+  font-weight: var(--card-text-weight);
   font-size: 14px;
   opacity: 0.7;
   mix-blend-mode: hard-light;
