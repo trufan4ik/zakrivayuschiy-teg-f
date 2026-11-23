@@ -1,0 +1,12 @@
+:root {
+  --main-font: "Inter", sans-serif;
+  --accent-font: "PressStart2P", fantasy;
+  --card-text-weight: 400;
+  --card-title-weight: 785;
+  --background-image:
+    repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(180deg, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a 100%);
+  --contour-color: #000000;
+  --animation-fill-color: #ff0000;
+}
