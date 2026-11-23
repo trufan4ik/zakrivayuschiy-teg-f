@@ -61,7 +61,7 @@
 
 .card_title {
   font-family: var(--main-font);
-  font-variation-settings: var(--card-text-weight);
+  font-variation-settings: "wght" var(--card-title-weight, 785);
   font-size: 18px;
   padding: 4px 10px;
   border-bottom: 2px solid #000;
@@ -107,7 +107,7 @@
 
 .card_text {
   font-family: var(--main-font);
-  font-variation-settings: var(--card-text-weight);
+  font-variation-settings: "wght" var(--card-text-weight, 400);
   font-size: 18px;
   line-height: 21px;
   margin: 0 25px 25px 25px;
