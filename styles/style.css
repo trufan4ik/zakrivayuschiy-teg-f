@@ -1,15 +1,17 @@
 .page {
   min-inline-size: 320px;
+  max-inline-size: 1440px;
   min-block-size: 100dvb;
-}
-
-.header {
-  min-inline-size: 375px;
-  min-block-size: 667px;
   background-image: var(--background-image);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.header {
+  min-inline-size: 375px;
+  min-block-size: 427px;
+  block-size: 100%;
 }
 
 .header_title {
@@ -23,6 +25,7 @@
   font-family: var(--accent-font);
   font-weight: 400;
   font-size: clamp(0.875rem, 0.8451vw + 0.6769rem, 1.4375rem);
+  text-transform: uppercase;
 }
 
 .header_container {
@@ -36,27 +39,22 @@
   background-color: #ffffff;
   border: 2px solid #000;
   margin-top: 100px;
-  position: absolute;
 }
 
 .content {
   display: grid;
-  gap: 50px;
+  gap: 49px;
   align-items: center;
-  justify-content: center;
+  justify-items: center;
 }
 
 .content__section {
-  inline-size: 100%;
+  inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   block-size: max-content;
   display: flex;
   flex-direction: column;
   background-color: #fff;
   border: 2px solid #000;
-}
-
-.null-sprint_card {
-  margin-top: -140px;
 }
 
 .card_title {
@@ -128,6 +126,8 @@
 .button {
   transition: box-shadow 0.3s ease;
   position: relative;
+  cursor: pointer;
+  background-color: #fff;
 }
 
 .button:focus {
@@ -162,7 +162,7 @@
 }
 
 .card__icon-button:focus-visible {
-  border-color: 2px solid var(--accent-color) ;
+  border-color: 2px solid var(--accent-color);
 }
 
 .card__like-button {
@@ -183,7 +183,6 @@
   margin-left: 173px;
   margin-right: 20px;
   margin-bottom: 25px;
-  background-color: #fff;
 }
 
 .img-container {
@@ -222,13 +221,13 @@
   }
 }
 
-.footer__button {
+.save_button {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin: 50px 34.5px 100px 34.5px;
+  margin-bottom: 100px;
   min-inline-size: 306px;
   min-block-size: 84px;
   border: 2px solid #000;
@@ -290,17 +289,17 @@
   cursor: pointer;
 }
 
-@media (width >=375px) {
+@media (width >=376px) {
+  .content {
+    gap: 47px;
+  }
   .header {
-    min-block-size: 960px;
+    min-block-size: 467px;
   }
   .header_container {
     max-inline-size: 700px;
     min-block-size: 368px;
     justify-self: center;
-  }
-  .null-sprint_card {
-    margin-top: -394px;
   }
   .card_text {
     max-inline-size: 646px;
@@ -308,14 +307,12 @@
   .button_container {
     margin-left: 496px;
   }
-  .footer__button {
+  .save_button {
     flex-direction: row;
-    margin-left: 552.5px;
-    margin-right: 552.5px;
     min-inline-size: 335px;
     min-block-size: 55px;
   }
-  .footer {
+  .save_button__section {
     display: flex;
     align-items: center;
   }

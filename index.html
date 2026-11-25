@@ -548,33 +548,33 @@
           </button>
         </div>
       </section>
-    </main>
-    <footer class="footer">
-      <button
-        type="button"
-        class="footer__button button"
-        onclick="window['dialog-save'].showModal()"
-        aria-controls="dialog-save"
-      >
-        <svg class="floppy-icon" width="28" height="28" viewBox="0 0 13 13">
-          <use href="./svg/floppy.svg#floppy"></use>
-        </svg>
-        <span class="button__text">Сохранить на память</span>
-      </button>
-      <dialog id="dialog-save" class="dialog">
-        <div class="dialog__content">
-          <svg class="dialog__icon" width="39" height="39" aria-hidden="true">
+      <section class="save_button__section">
+        <button
+          type="button"
+          class="save_button button"
+          onclick="window['dialog-save'].showModal()"
+          aria-controls="dialog-save"
+        >
+          <svg class="floppy-icon" width="28" height="28" viewBox="0 0 13 13">
             <use href="./svg/floppy.svg#floppy"></use>
           </svg>
-          <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
-        </div>
-        <form method="dialog" class="dialog__form">
-          <button type="submit" class="dialog__button button">
-            <span class="button__text">ОК</span>
-          </button>
-        </form>
-      </dialog>
-    </footer>
+          <span class="button__text">Сохранить на память</span>
+        </button>
+        <dialog id="dialog-save" class="dialog">
+          <div class="dialog__content">
+            <svg class="dialog__icon" width="39" height="39" aria-hidden="true">
+              <use href="./svg/floppy.svg#floppy"></use>
+            </svg>
+            <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
+          </div>
+          <form method="dialog" class="dialog__form">
+            <button type="submit" class="dialog__button button">
+              <span class="button__text">ОК</span>
+            </button>
+          </form>
+        </dialog>
+      </section>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
