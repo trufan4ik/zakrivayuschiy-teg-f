@@ -11,7 +11,7 @@
 }
 
 .header {
-  min-inline-size: 375px;
+  inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   min-block-size: 427px;
   block-size: 100%;
   margin-bottom: 100px;
